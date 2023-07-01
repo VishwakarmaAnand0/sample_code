@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript string are use for storing and manipulating text</h2>
+
+        <p id="demo"></p>
+        <button onclick="alertpro()">click</button>
+    <script>
+    const a={
+        age:21,
+        education:"bac", name:"Vishwakarma Anand Sushil ", address:"Shivaji nagar kalyan road ",
+        fulldetail:function()
+        {
+            return this.age+" "+this.name+" "+this.address+" "+this.education;
+        }
+    };
+    function alertpro(){
+        alert("hellow annad...");
+    }
+    document.getElementById("demo").innerHTML=a.fulldetail();
+   // document.getElementById("demo").innerHTML=a["age"]+" "+a["name"];
+   // document.getElementById("demo").innerHTML=a.age+" "+a.name;
+    </script>
+    </body>
+</html>
